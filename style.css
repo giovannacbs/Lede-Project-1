@@ -1,0 +1,91 @@
+body {
+  background-color: #f5f4ee;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  max-width: 50%;
+  margin: 4rem auto 2rem auto;
+}
+
+p {
+  max-width: 50%;
+  font-family: sans-serif;
+  margin: 0 auto 2rem auto;
+  font-size: 19px;
+}
+
+#scrolly {
+  position: relative;
+  padding: 1rem;
+}
+
+.scrolly-overlay {
+  position: relative;
+  padding: 0;
+  max-width: 35rem;
+  margin-left: 2px;
+  margin-right: auto;
+}
+
+.sticky-thing {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.step {
+  margin: 0 auto 2rem auto;
+  margin-bottom: 25rem;
+  background-color: #f5f4ee;
+  color: black;
+  text-align: center;
+}
+
+.step p {
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: black;
+}
+
+.photoDiv {
+  width: 49%;
+  margin-left: auto;
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 700px) {
+  #scrolly.side-by-side {
+    display: flex;
+  }
+
+  #scrolly.side-by-side > div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75em;
+  }
+
+  #scrolly.side-by-side .scrolly-overlay {
+    order: 0;
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+
+  #scrolly.side-by-side .sticky-thing {
+    order: 1;
+    flex-grow: 2;
+  }
+}
