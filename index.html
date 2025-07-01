@@ -1,4 +1,4 @@
-<!-- The originial version of this template was made by Johnathan Soma and then messed with and customized by Aaron Reiss -->
+<!-- The original version of this template was made by Johnathan Soma and then messed with and customized by Aaron Reiss -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Commute Game Plan: "Soletra" Edition</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
@@ -27,21 +28,27 @@
 
       <div class="scrolly-overlay">
         <div class="step" id="step0">
-          <p><b>This is my daily route</b><br><br>There are some variations, but nothing too different from this.</p>
+          <p>
+            <b>This is my daily route</b><br><br>
+            The route starts in a <span style="color: #7dbc82;"><b>green zone</b></span>, where I feel relatively safe playing <em>Soletra</em>. Even though the risk is still present, it's the part of the commute where I’m most relaxed.<br><br>
+            As I move along, I pass through several stretches marked in <span style="color: #ffb54b;"><b>yellow</b></span>. These are caution zones — I stay alert, especially when traffic slows down or comes to a stop, as those moments can quickly become dangerous.<br><br>
+            At certain points, I enter areas highlighted in <span style="color: #fb6a63;"><b>red</b></span>. These are absolute no-go zones for taking out my phone. The risk of being robbed here is simply too high.
+          </p>
         </div>
+
         <div class="step" id="step1">
           <p><b>Robberies</b><br><br>Each point on this map represents one cellphone theft reported in 2025 up until April.</p>
         </div>
+
         <div class="step" id="step2">
           <p><b>Inside vehicles</b><br><br>The red dots show robberies that happened while the victim was inside a vehicle.</p>
         </div>
+
         <div class="step" id="step3">
           <p><b>Not far from reality</b><br><br>Based on the data provided by the city hall, the areas where I fear using my phone the most are also where more thefts occur.</p>
         </div>
       </div>
     </section>
-
-    <p>Data was provided by the city hall.</p>
 
     <script src="script.js"></script>
   </body>
