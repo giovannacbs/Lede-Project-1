@@ -1,4 +1,4 @@
-# The Commute Game Plan: "Soletra" Edition
+# [The Commute Game Plan: "Soletra" Edition](https://giovannacbs.github.io/Lede-Project-1/)
 An interactive scrollytelling project built to visualize cellphone theft risk along my daily commute in São Paulo.
 ---
 
